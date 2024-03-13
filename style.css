@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Uncut-Sans-v1301, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 7px;
+    background: #8338EC;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 15%;
+    font-size: 18px;
+}
+.header-text h1{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #8338EC;
+}
+.minhas-criações{
+    padding: 150px 0;
+    font-size: 45px;
+    font-weight: 600;
+    color: #FFBE0B;
+}
+.minhas-criações-list{
+    display: grid;
+    grid-template-columns: reapet(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.criações{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.criações img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.area redes-sociais{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.area redes-sociais h2{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.area redes-sociais nav{
+    display: flex;
+    flex-direction: column;
+}
+.redes-sociais nav a{
+margin-top: 30px;
+color: #8338EC;
+text-decoration: none;
+transition: filter 0.2s;
+font-size: 28px;
+font-weight: 600px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+contact-right{
+    flex-basis: 60%;
+}
+.sub-title{
+    margin: 25px;
+}
